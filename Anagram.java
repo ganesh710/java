@@ -10,11 +10,11 @@ public class Anagram
                 }
 		else 
 			{
-			char[] ArrayS1 = s1.toLowerCase().toCharArray();
-			char[] ArrayS2 = s2.toLowerCase().toCharArray();
-			Arrays.sort(ArrayS1);
-			Arrays.sort(ArrayS2);
-			status = Arrays.equals(ArrayS1, ArrayS2);
+			char[] Array1 = s1.toLowerCase().toCharArray();
+			char[] Array2 = s2.toLowerCase().toCharArray();
+			Arrays.sort(Array1);
+			Arrays.sort(Array2);
+			status = Arrays.equals(Array1, Array2);
 		        }
 		if (status) 
 		{
@@ -27,7 +27,7 @@ public class Anagram
 	}
  
 	public static void main(String[] args) {
-		isAnagram("peek", "Peek");
+		isAnagram("Dormitory", "Dirtyroom");
 		isAnagram("Mother In Law", "Hitler Woman");
 	}
 }
